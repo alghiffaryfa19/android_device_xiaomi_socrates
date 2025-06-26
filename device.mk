@@ -19,6 +19,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/goodix_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix_ts.kl
 
+# Init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/init.socrates.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.socrates.rc
+
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworkResOverlaySocrates \
