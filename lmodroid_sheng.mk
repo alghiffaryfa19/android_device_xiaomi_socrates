@@ -12,7 +12,7 @@ $(call inherit-product, build/make/target/product/core_64_bit_only.mk)
 $(call inherit-product, device/xiaomi/sheng/device.mk)
 
 # Inherit LineageOS configurations
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/lmodroid/config/common_full_tablet_wifionly.mk)
 
 PRODUCT_NAME := lmodroid_sheng
 PRODUCT_DEVICE := sheng
