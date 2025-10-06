@@ -1,5 +1,5 @@
 # Bluetooth
-bluetooth.device.default_name=Redmi K60 Pro
+bluetooth.device.default_name=Pad 6S Pro 12.4
 
 # Display
 vendor.display.disable_3d_adaptive_tm=1
@@ -9,4 +9,4 @@ ro.vendor.mi_sf.ultimate.perf.support=true
 persist.sys.miui_resolution=1440x3200
 
 # USB
-vendor.usb.product_string=Redmi K60 Pro
+vendor.usb.product_string=Pad 6S Pro 12.4

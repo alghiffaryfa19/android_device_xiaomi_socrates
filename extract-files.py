@@ -76,13 +76,12 @@ blob_fixups: blob_fixups_user_type = {
 }
 
 module = ExtractUtilsModule(
-    'socrates',
+    'sheng',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
     check_elf=True,
-    add_firmware_proprietary_file=True,
 )
 
 if __name__ == '__main__':

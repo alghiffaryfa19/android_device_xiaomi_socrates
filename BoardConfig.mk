@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/socrates
+DEVICE_PATH := device/xiaomi/sheng
 
 # Inherit from sm8550-common
 include device/xiaomi/sm8550-common/BoardConfigCommon.mk
@@ -13,27 +13,23 @@ include device/xiaomi/sm8550-common/BoardConfigCommon.mk
 TARGET_SCREEN_DENSITY := 540
 
 # Kernel
-BOARD_VENDOR_KERNEL_MODULES_LOAD += \
-    wl2866d.ko \
-    xiaomi_touch.ko \
-    goodix_core.ko \
-    goodix_fod.ko
+# BOARD_VENDOR_KERNEL_MODULES_LOAD += \
+#     wl2866d.ko \
+#     xiaomi_touch.ko \
+#     goodix_core.ko \
+#     goodix_fod.ko
 
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += \
-    goodix_core.ko
+# BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += \
+#     goodix_core.ko
 
-BOOT_KERNEL_MODULES += \
-    goodix_core.ko
+# BOOT_KERNEL_MODULES += \
+#     goodix_core.ko
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := /sys/devices/platform/goodix_ts.0/double_tap_enable
+# TARGET_TAP_TO_WAKE_NODE := /sys/devices/platform/goodix_ts.0/double_tap_enable
 
 # System properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
-# Vibrator
-TARGET_QTI_VIBRATOR_EFFECT_LIB := libqtivibratoreffect.xiaomi
-TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM := true
 
 include vendor/xiaomi/socrates/BoardConfigVendor.mk
